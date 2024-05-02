@@ -1,0 +1,14 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "title": "Build UI for onboarding flow",
+      "details": "Make beautiful websites regardless of your design experience. Lorem ipsum dolor sit amet.",
+      "priority": "Medium",
+      "complete": false,
+      "timeTaken": "1hr 15mins",
+      "dueDate": "02/04/2024",
+      "createdAt": "01/02/2024 at 3:16pm"
+    }
+  ]
+}
