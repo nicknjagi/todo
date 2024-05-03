@@ -2,6 +2,7 @@
 
 import {NextUIProvider} from '@nextui-org/react'
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { useState } from 'react';
 
 export function Providers({children}) {
@@ -10,6 +11,7 @@ export function Providers({children}) {
     <NextUIProvider>
       <QueryClientProvider client={queryClient}>
         {children}
+        <ReactQueryDevtools />
       </QueryClientProvider>
     </NextUIProvider>
   )
