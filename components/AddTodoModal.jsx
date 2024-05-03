@@ -13,7 +13,7 @@ const AddTodoModal = () => {
 
   return (
     <>
-      <Button onPress={onOpen} color="primary">
+      <Button size="sm" onPress={onOpen} color="primary">
         + Add Todo
       </Button>
       <Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="top-center">
