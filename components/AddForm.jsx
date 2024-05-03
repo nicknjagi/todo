@@ -15,8 +15,9 @@ const AddForm = ({ onClose }) => {
   const [todo, setTodo] = useState({
     title: "",
     details: "",
-    priority: "",
+    priority: "Low",
     complete: false,
+    timeTaken:'',
     dueDate: "",
     createdAt: new Date()
   });
@@ -56,6 +57,7 @@ const AddForm = ({ onClose }) => {
         type="text"
         label="Title"
         name="title"
+        isRequired
         onChange={handleChange}
         variant="bordered"
       />
@@ -72,6 +74,7 @@ const AddForm = ({ onClose }) => {
           type="date"
           label="Due date"
           name="dueDate"
+          isRequired
           onChange={handleChange}
           variant="bordered"
         />
